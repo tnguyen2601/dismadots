@@ -1,6 +1,7 @@
 ## Notes
-- [Starhsip](https://starship.rs/guide/)
-- From `root`, in `.config/starship/` insert the TOML
+- [Starship](https://starship.rs/guide/)
+- From `root`, create a `starship` directory in `.config` and insert the TOML.
+  - `.config/starship/starship.toml`
 
 **Addtionally:**
 ### Bash
