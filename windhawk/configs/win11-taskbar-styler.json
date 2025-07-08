@@ -1,0 +1,8 @@
+{
+  "theme": "RosePine",
+  "controlStyles[0].target": "Taskbar.ExperienceToggleButton#LaunchListButton[AutomationProperties.Automationld=StartButton]",
+  "controlStyles[0].styles[0]": "Visibility=Visible",
+  "resourceVariables[0].variableKey": "",
+  "resourceVariables[0].value": "",
+  "styleConstants[0]": ""
+}
