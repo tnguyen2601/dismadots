@@ -50,6 +50,9 @@
 .widget .label.alt {
 	padding: 1px 8px 1px 8px;
 }
+.battery-widget .widget-container .icon {
+    color: #fffc00;
+}
 .clock-widget .label {
     padding-left:8px;
 }
@@ -165,12 +168,24 @@
     padding: 0;
     margin: 0;
     border: none;
+    padding-right: 10px;
 }
 .taskbar-widget .app-icon {
     padding: 0 6px;
     border: none;
     margin: 0;
 }
+
+.taskbar-widget .app-container {
+    margin: 4px 2px;
+    border-radius: 4px;
+    padding: 0 4px;
+}
+
+.taskbar-widget .app-container .app-icon { 
+    padding: 0; 
+}
+
 /* ICONS */
 .icon {
 	font-size: 16px;
@@ -212,11 +227,11 @@
 	font-size: 16px;
 }
 .media-widget .btn.prev {
-    padding: 0 0px 0 0px;	
+    padding: 0 8px 0 8px;	
     font-size: 12px;
 }
 .media-widget .btn.next {
-    padding: 0 8px 0 0px;
+    padding: 0 8px 0 8px;
     font-size: 12px;
 }
 .media-widget .btn.disabled:hover,
@@ -234,4 +249,4 @@
 }
 .active-window-widget .widget-container .label {
     color: var(--subtext1);
-}
+} 

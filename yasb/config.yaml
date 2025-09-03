@@ -40,13 +40,12 @@ widgets:
   media:
       type: "yasb.media.MediaWidget"
       options:
-        label: "<span>\uf001</span> {title}"
-        label_alt: "<span>\uf001</span> {artist}"
+        label: "{title}"
         hide_empty: true
         max_field_size:
           label: 20
           label_alt: 20
-        show_thumbnail: false
+        show_thumbnail: true
         controls_only: false
         controls_left: true
         thumbnail_alpha: 0
@@ -85,7 +84,7 @@ widgets:
   taskbar:
     type: "yasb.taskbar.TaskbarWidget"
     options:
-      icon_size: 12
+      icon_size: 16
       animation:
         enabled: true
         duration: 200
@@ -94,11 +93,6 @@ widgets:
         processes: []
         titles: []
         classes: []
-      container_padding: 
-        top: 0
-        left: 8
-        bottom: 0
-        right: 8
   komorebi_workspaces:
       type: "komorebi.workspaces.WorkspaceWidget"
       options:
@@ -197,6 +191,13 @@ widgets:
         label_alt: "{icon} {percent}% | time: {time_remaining}"
         charging_options:
           icon_format: "{charging_icon}"
+        update_interval: 5000
+        status_thresholds:
+          critical: 10
+          low: 25
+          medium: 75
+          high: 95
+          full: 100
   language:
       type: "yasb.language.LanguageWidget"
       options:
